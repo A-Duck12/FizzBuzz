@@ -4,3 +4,25 @@ using namespace std;
 
 int main()
 {
+int i;
+
+for (i = 1; i >= 1 && i <= 250; ++i) {
+  if (i % 3 == 0) {
+    cout << "Fizz";
+  }
+  else if (i % 5 == 0) {
+    cout << "Fizzy";
+  }
+  else if (i % 7 == 0) {
+    cout << "Buzz";
+  }
+  else {
+    cout << i;
+  }
+  if (i < 250) {
+    cout << ", ";
+  }
+}
+
+return 0;
+}
